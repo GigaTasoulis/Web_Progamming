@@ -43,4 +43,4 @@ Credits
 This app was created by Giannakakis Anastasios and Katis Ioannis.
 
 
-That's a basic README.md file for a restaurant app on GitHub. Of course, you can customize it to fit your needs and add more information as necessary.
+That's a basic README.md file for a restaurant app. Of course, you can customize it to fit your needs and add more information as necessary.
