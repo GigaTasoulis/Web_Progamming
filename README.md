@@ -53,6 +53,8 @@ This app was created by Giannakakis Anastasios and Katis Ioannis.
 
 That's a basic README.md file for a restaurant app. Of course, you can customize it to fit your needs and add more information as necessary.
 
+## Here is a preview of our ERD:
+
 ![image](https://user-images.githubusercontent.com/119429929/224504232-a318ba11-1273-4103-9aea-fd2cfa629481.png)
 
 
