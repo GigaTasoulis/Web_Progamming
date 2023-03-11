@@ -1,13 +1,21 @@
 # Restaurant App
-This is a mobile application designed to support restaurant management, including features such as ordering, reservations, and menu management. The app is built using Javascript,HTML,Bootstrap and ......
+This is website designed to support restaurant management, including features such as reservations, and menu management. The app is built using Javascript,HTML,Bootstrap,Node,Express.
 
 ## Features
 The app currently supports the following features:
 
-Ordering: Customers can place orders through the app and receive real-time updates on their order status.
-Reservations: Customers can reserve tables and receive confirmation through the app.
-Menu Management: Restaurant staff can update the menu and pricing through the app.
-And many more...
+``` 
+
+- Menu: Customers can see the available menu,dishes etc.
+- Wine List: Available wines
+- Reservations: Customers can reserve tables and receive confirmation through the app.
+- Menu Management: Administrators can update the menu and pricing through the app.
+- Reservation Management: Administrators are able to process the reservations
+- Supports Job Application
+
+```
+
+
 
 ## Installation
 To install the app, follow these steps:
