@@ -1,22 +1,19 @@
 html, body {
   height: 100%;
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
-  
+  margin:0;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 !important;
+  flex-wrap: wrap; 
 }
 
 .side-menu {
   justify-content: flex-end;
-  width: 250px;
   background-color: #231f20;
   align-items: center;
-  height: 400px;
-  z-index: 1;
+  width: 100%; 
 }
 
 .side-menu ul {
@@ -50,24 +47,31 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 0 0 300px;
+  position: fixed;
+  overflow-y: scroll;
 }
 
 .col-md-3:first-child {
   padding: 0;
-  height: 100vh;
+  height: 100%;
   background-color: #231f20;
   width: 300px;
 }
 
-.col-md-9:last-child {
-  margin-left: 20px;
-  width: calc(100% - 350px);
+.col-md-9 { 
+  margin-left: 320px;
+  padding-top: 20px;
+  width: calc(100%-320px);
+  flex:1;
 }
 
 .pictures {
   display: block;
   height: auto;
-  width: 500px;
+  width: 100%;
+  max-width:1000px;
+  margin:0 auto;
 }
 
 #btn{
@@ -81,7 +85,7 @@ html, body {
   padding: 10px;
   width: 150px;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 25%;
 }
 
 #btn:hover, #btn:focus {
@@ -97,7 +101,7 @@ html, body {
   justify-content: baseline;
   align-items: baseline;
   list-style: none;
-  padding: 0px;
+  padding: 0%;
 }
 
 .socials_pic:hover{
@@ -109,9 +113,8 @@ html, body {
 }
 
 .address a:link,.address a:visited{
-  color: white ;
+  color: white;
   text-decoration:none !important; 
-  
 }
 
 .address a:hover{
@@ -119,6 +122,10 @@ html, body {
   text-decoration: none;
 }
 
-
-
-
+.discription{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+}
