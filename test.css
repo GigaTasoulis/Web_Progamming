@@ -28,7 +28,7 @@ html, body {
 
 .logo {  
   height: 200px;
-  width: 300px;
+  width: 280px;
 }
 
 .side-menu a{
@@ -63,15 +63,12 @@ html, body {
   margin-left: 320px;
   padding-top: 20px;
   width: calc(100%-320px);
-  flex:1;
 }
 
 .pictures {
   display: block;
   height: auto;
   width: 100%;
-  max-width:1000px;
-  margin:0 auto;
 }
 
 #btn{
@@ -85,7 +82,8 @@ html, body {
   padding: 10px;
   width: 150px;
   text-align: center;
-  margin-left: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #btn:hover, #btn:focus {
@@ -122,10 +120,40 @@ html, body {
   text-decoration: none;
 }
 
-.discription{
+.description{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: fixed;
 }
+
+/* CSS for the login_form */
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
