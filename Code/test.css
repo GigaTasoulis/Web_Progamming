@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 html, body {
   font-family: 14px Ubuntu, Helvetica, Arial, sans-serif;
+  background-image: url(/photos/JFS_5221-1.jpg);
+  background-size:contain;
+  background-attachment: fixed;
 }
 
 .col-sm-2 {
@@ -13,6 +19,10 @@ html, body {
   
 }
 
+.col-md-10{
+  
+  position: relative;
+}
 
 .img-thumbnail {
   padding: 0rem;
@@ -37,6 +47,7 @@ html, body {
   margin-left: 10px;
 }
 .steaks_list{
+  color: white;
   list-style: none;
   font-family: Georgia, serif;
   flex-wrap: wrap;
@@ -49,20 +60,31 @@ html, body {
 }
 
 
-
+ /* first text */
 .one_half{
   width: 40%; 
   position: absolute; 
-  right: 100px; 
-  bottom:140px; 
+  right: 200px;
   padding: 40px; 
   background: rgb(255, 255, 255); 
   display: block; 
   transform: translate3d(0px, 58.7063px, 0px);
 
 }
+
 .list-group{
   margin-top: 5%;
+}
+/* second text */
+.second_half{
+  width: 40%;
+  bottom: 12%;
+  right: 10%;
+  position: absolute;
+  display: block; 
+  background: rgb(255, 255, 255);
+  padding: 40px;
+ 
 }
 
 .nav-link {
@@ -131,11 +153,11 @@ html, body {
   letter-spacing: 0 !important;
   font-weight: 700;
   line-height: 50px;
-  font-family: Brush Script MT;
+  font-family: 'Alex Brush',cursive!important;
 }
 
 h2.ppb_title {
-  
+  color: white;
   font-weight: 500;
   font-size: 35px!important;
   text-transform: uppercase;
@@ -175,6 +197,8 @@ a.button:hover{
 }
 
 
+
+
 /* Footer Styling */
 #footer {
   width: 100%;
@@ -202,7 +226,7 @@ a.button:hover{
 #footer ul li:nth-child(2) {
   font-weight: bold;
   text-transform: uppercase;
-  font-family: Alex Brush cursive;
+  font-family: Alex Brush cursive !important;
   color: #8b734b;
   margin-right: 300px;
   margin-left: 230px;
@@ -236,3 +260,74 @@ a.button:hover{
   background-color: #555; /* Add a dark-grey background on hover */
 }
 /* Footer Styling */
+
+
+.btnModal{
+  background-color: #664a27;
+  color: white;
+  width: 100px;
+  border: none;
+
+}
+
+.btnModal:hover{
+  background-color: #8b734b;
+  border-color: #8b734b;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.scroll {
+  text-align: center;
+  margin-top: -125px;
+  z-index: 10;
+  position: relative;
+}
+
+.plate-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+.plate-item {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  margin-left: 5%;
+}
+
+.plate-item img {
+  max-width: 100%;
+  min-height: 200px;
+  height: auto;
+}
+
+/* -------------------------------- MOBILE CSS ----------------------------------- */
+
+/* Set a breakpoint for mobile devices */
+@media only screen and (max-width: 574px) {
+  /* Change the direction of the columns to "column" */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  /* Style the navigation menu to take up the full width */
+  .navigation {
+    width: 100%;
+  }
+
+  /* Style the left column to be below the navigation menu */
+  .right-column {
+    order: 2;
+  }
+}
+
+/* -------------------------------- MOBILE CSS ----------------------------------- */
