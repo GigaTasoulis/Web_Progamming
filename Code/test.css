@@ -6,6 +6,7 @@ html, body {
   background-image: url(/photos/JFS_5221-1.jpg);
   background-size:contain;
   background-attachment: fixed;
+  
 }
 
 .col-sm-2 {
@@ -19,9 +20,14 @@ html, body {
   
 }
 
+.row{
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
 .col-md-10{
   
   position: relative;
+  padding: 0px;
 }
 
 .img-thumbnail {
@@ -36,7 +42,7 @@ html, body {
 #menu_picture{
   height:900px;
   width: auto;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 /* Pictures */
@@ -47,11 +53,19 @@ html, body {
   margin-left: 10px;
 }
 .steaks_list{
-  color: white;
+  color: black;
   list-style: none;
   font-family: Georgia, serif;
   flex-wrap: wrap;
+  background-color: rgba(255, 255, 255);
+  position: absolute; 
+  top: 15%; 
+  left: 45%; 
+  padding: 3em;
+  width: 40%;
+  
 }
+
 .steaks_list>li{
   display: block;
   margin-top: 10px;
@@ -69,8 +83,8 @@ html, body {
   background: rgb(255, 255, 255); 
   display: block; 
   transform: translate3d(0px, 58.7063px, 0px);
-
 }
+
 
 .list-group{
   margin-top: 5%;
@@ -142,7 +156,7 @@ html, body {
 }
 
 .ppb_title_first {
-  color: #8b734b;
+  color: #222;
   display: block;
   font-style: italic;
   font-size: 38px!important;
@@ -157,7 +171,7 @@ html, body {
 }
 
 h2.ppb_title {
-  color: white;
+  color: black;
   font-weight: 500;
   font-size: 35px!important;
   text-transform: uppercase;
@@ -200,66 +214,49 @@ a.button:hover{
 
 
 /* Footer Styling */
-#footer {
-  width: 100%;
-  padding-top: 50px;
-  background-color: #231f20;
-  color: white;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-#footer ul {
+footer {
+  margin-left: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  justify-content: space-between;
+  background-color: #231f20;
+  padding: 20px;
 }
 
-#footer li {
-  margin-right: 20px;
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
-
-#footer ul li:nth-child(2) {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: Alex Brush cursive !important;
+.address a{
+  text-decoration: none;
   color: #8b734b;
-  margin-right: 300px;
-  margin-left: 230px;
-  
+}
+.logo, .tagline, .address{
+  flex-basis: 25%;
+  color: #8b734b;
+  align-self: center;
 }
 
-@media only screen and (max-width: 768px) {
-  #footer li {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
+.address {
+  text-align: center;
+  color:white;
+  align-self: center;
 }
-
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+.credits a{
+  text-decoration: none;
+  color: inherit;
 }
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+.credits {
+  text-align: center;
+  width: 100%;
+  color: #8b734b;
+  margin-top: 30px;
 }
 /* Footer Styling */
+
+
 
 
 .btnModal{
@@ -285,6 +282,7 @@ a.button:hover{
 }
 
 .plate-list {
+  background-color: (255, 255, 255, 0.8);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -293,7 +291,7 @@ a.button:hover{
   margin-top: 20px;
 }
 .plate-item {
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,6 +305,7 @@ a.button:hover{
   min-height: 200px;
   height: auto;
 }
+
 
 /* -------------------------------- MOBILE CSS ----------------------------------- */
 
