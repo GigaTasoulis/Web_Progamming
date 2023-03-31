@@ -55,6 +55,6 @@ That's a basic README.md file for a restaurant app. Of course, you can customize
 
 ## Here is a preview of our ERD:
 
-![image](https://user-images.githubusercontent.com/119429929/224504232-a318ba11-1273-4103-9aea-fd2cfa629481.png)
+![image](https://user-images.githubusercontent.com/119429929/229145826-2e397f3c-2b12-40e5-b1f7-a054901c9d04.png)
 
 
