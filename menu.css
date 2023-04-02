@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+html, body{
+  font-family: 14px Ubuntu, Helvetica, Arial, sans-serif; 
+  background-size:contain;
+  background-attachment: fixed;  
+}
+
+.col-sm-2{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #231f20;
+  overflow-x: hidden;
+  z-index: 1;
+  height: 100%;  
+}
+
+.col-md-10{ 
+  padding: 0px;
+}
+
+.col-md-12{
+  margin-top: 2rem;
+}
+
+.img-thumbnail{
+  padding: 0rem;
+  border: 0;  
+  border-radius: 0%;  
+}
+
+.list-group{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.nav {
+  --bs-nav-link-color: #8b734b; 
+  --bs-nav-link-hover-color: #8b734b; 
+}
+
+.btn-primary{
+  margin-top: 5%;
+  padding: 12px;
+  background-color: white;
+  border-color: white;
+  border-radius: 0%;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  margin-bottom: 5%;
+  --bs-btn-bg: #8b734b;
+  --bs-btn-border-color: #8b734b;
+  --bs-btn-hover-bg: #8b734b;
+  --bs-btn-hover-border-color: #8b734b;
+  --bs-btn-active-bg: #8b734b;
+  --bs-btn-active-border-color: #8b734b;
+  --bs-btn-disabled-bg: #8b734b;
+  --bs-btn-disabled-border-color: #8b734b;  
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #8b734b;
+  border-color: #8b734b;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.list-group-item{
+  padding: 0%;
+  border: #231f20;
+  margin-bottom: 5%;
+  font-size: larger;
+  font-weight: bold;
+  /* max-width: 300px; */
+}
+
+.flex-row{
+  color: white;
+}
+
+.col-md-10{  
+  margin-left: 16%;
+}
+
+.ppb_title_first{
+  color: #222;
+  display: block;
+  font-style: italic;
+  font-size: 38px!important;
+  text-transform: none;
+  top: 0;
+  position: relative;
+  color: #cfa670;
+  letter-spacing: 0 !important;
+  font-weight: 700;
+  line-height: 50px;
+  font-family: 'Alex Brush',cursive!important;
+}
+
+h2.ppb_title{
+  color: black;
+  font-weight: 500;
+  font-size: 35px!important;
+  text-transform: uppercase;
+}
+
+.parallax_title h2 {
+  color: #fff !important;
+}
+
+a.button:hover{
+  background-color: #8b734b;
+  transition: background-color 0.5s ease;
+}
+
+/* Footer Styling */
+footer {
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #231f20;
+  padding: 20px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.address a{
+  text-decoration: none;
+  color: #8b734b;
+}
+
+.logo, .tagline, .address{
+  flex-basis: 25%;
+  color: #8b734b;
+  align-self: center;
+}
+
+.address {
+  text-align: center;
+  color:white;
+  align-self: center;
+}
+
+.credits a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.credits {
+  text-align: center;
+  width: 100%;
+  color: #8b734b;
+  margin-top: 30px;
+}
+/* Footer Styling */
+
+.btnModal{
+  background-color: #664a27;
+  color: white;
+  width: 100px;
+  border: none;
+}
+
+.btnModal:hover{
+  background-color: #8b734b;
+  border-color: #8b734b;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.media{
+  display: flex;
+  margin-left: 2.5%;
+  width: 97%;
+  flex-direction: column-reverse;
+  background-image: url("menu.jpg");
+  height: 700px;
+  padding: 0;
+}
+
+.media > .menu{
+  margin-bottom: 1em;
+  font-size: 4rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.down_title{
+  font-weight: bold;
+}
+
+.description{
+  font-size: smaller;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.price{
+  font-size: smaller;
+  font-style: italic;
+}
+
+.wines > .list-group-item{
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* -------------------------------- MOBILE CSS ----------------------------------- */
+
+/* Set a breakpoint for mobile devices */
+@media only screen and (max-width: 574px) {
+  /* Change the direction of the columns to "column" */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  /* Style the navigation menu to take up the full width */
+  .navigation {
+    width: 100%;
+  }
+
+  /* Style the left column to be below the navigation menu */
+  .right-column {
+    order: 2;
+  }
+}
+
+/* -------------------------------- MOBILE CSS ----------------------------------- */
