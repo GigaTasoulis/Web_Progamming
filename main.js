@@ -1,12 +1,10 @@
 
-// function scrollSlowly(event){
-//   var scrollLink = document.getElementById("scroll-link");
-
-// scrollLink.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   window.scrollBy(0,100) 
-// });
-// }
+window.addEventListener('resize', function(event){
+	if(window.innerWidth < 992){
+		var element = document.querySelector('.col-md-10');
+    element.classList.replace('.col-md-10', '.col-md-12');
+	}
+});
 
 
 
