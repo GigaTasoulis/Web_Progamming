@@ -10,7 +10,10 @@ html, body{
 
 @media screen and (max-width: 1200px) {
   .col-sm-2{
-    background-color: transparent !important;
+    display: none !important;
+  }
+  .navbar{
+    display: block !important;
   }
   .col-md-10{
     width: 100%;
@@ -46,6 +49,10 @@ html, body{
 
 #offcanvasNavbar{
   background-color: #231f20; 
+}
+
+.navbar{
+  display: none;
 }
 
 .col-sm-2{
@@ -134,11 +141,29 @@ html, body{
   padding: 40px; 
 }
 
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #231f20 !important;
+}
+
+.navbar-brand span {
+  color: #8b734b;
+}
+
+button.navbar-toggler {
+  background-color: white;
+  border-color: white;
+}
+
 .nav-link{
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #8b734b;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
@@ -149,6 +174,10 @@ html, body{
 .nav{
   --bs-nav-link-color: #8b734b; 
   --bs-nav-link-hover-color: #8b734b; 
+}
+
+.offcanvas-header button.btn-close {
+  font-size: 1.5rem;
 }
 
 .btn-primary{
