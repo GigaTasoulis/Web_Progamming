@@ -7,6 +7,18 @@ html, body{
   background-size:contain;
   background-attachment: fixed;  
 }
+.reservation_form_wrapper {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 999;
+  
+}
+
+/* -------------------------------- MOBILE CSS ----------------------------------- */
 
 @media screen and (max-width: 1200px) {
   .col-sm-2{
@@ -30,6 +42,7 @@ html, body{
     position: top !important;
     top: 4%;
     left: 6%;
+    /* padding-bottom: 0; */
 }
   /* second text */
   .second_half.parallax_scroll{
@@ -44,8 +57,14 @@ html, body{
     width: 100% !important;
     position: static !important;
   }
+
+  .btn-primary {
+    margin-right: 1rem;
+  }
   
 }
+
+/* -------------------------------- MOBILE CSS ----------------------------------- */
 
 #offcanvasNavbar{
   background-color: #231f20; 
@@ -61,7 +80,6 @@ html, body{
   flex-direction: column;
   background-color: #231f20;
   overflow-x: hidden;
-  flex-wrap: wrap;
   z-index: 1;
   height: 100%;  
 }
@@ -79,7 +97,7 @@ html, body{
   padding: 0rem;
   border: 0;  
   border-radius: 0%;
-  margin-right: 10px;
+  
 }
 
 /* Pictures */
@@ -106,7 +124,7 @@ html, body{
   top: 15%; 
   left: 45%; 
   padding: 3em;
-  width: 40%;  
+  width: 30%;  
 }
 
 .steaks_list>li{
@@ -117,7 +135,7 @@ html, body{
 
  /* first text */
 .one_half{
-  width: 40%; 
+  width: 50%; 
   position: absolute; 
   right: 200px;
   padding: 40px; 
