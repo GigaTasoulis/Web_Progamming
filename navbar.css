@@ -1,0 +1,47 @@
+#offcanvasNavbar {
+    background-color: #231f20; 
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar-brand span {
+    color: #8b734b;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #231f20 !important;
+}
+  
+button.navbar-toggler {
+    background-color: white;
+    border-color: white;
+}
+  
+button.navbar-toggler:hover {
+    background-color: #8b734b;
+    border-color: #8b734b;
+    transition: background-color 0.5s ease; 
+}
+
+.offcanvas-header button.btn-close {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #8b734b;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    --bs-nav-link-hover-color: #8b734b;
+    color: #8b734b;
+}
+
+.nav {
+    --bs-nav-link-color: #8b734b; 
+    --bs-nav-link-hover-color: #8b734b; 
+  }
+
+

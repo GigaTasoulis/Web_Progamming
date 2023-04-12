@@ -1,0 +1,47 @@
+@media screen and (max-width: 1200px) {
+    .col-sm-2 {
+        display: none !important;
+    }
+  
+    .navbar {
+        display: block !important;
+    }
+  
+    .col-md-10{
+        width: 100%;
+        margin-left: 0px !important;
+    }
+  
+    footer{
+        width: 100% !important;
+        margin-left: 0px !important;
+        position: static !important;
+        bottom: 0;
+    }
+    
+    .one_half.parallax_scroll, .parallax_scroll_image {
+        width: 90% !important;
+        position: top !important;
+        top: 4%;
+        left: 6%;
+    }
+  
+    /* second text */
+    .second_half.parallax_scroll{
+        width: 100% !important;
+        height:70vh;
+        padding: 30px;
+        position:static !important;
+        left: 5%;
+        top: 70%;
+    }
+  
+    .steaks_list{
+        width: 100% !important;
+        position: static !important;
+    }
+  
+    .btn-primary {
+        margin-right: 1rem;
+    }  
+}
