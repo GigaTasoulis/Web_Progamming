@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ελ">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>user_main</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+	<link rel="stylesheet" href="user_main.css">
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="modal.css">
+	<link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	
+	<!-- Navbar-Offcanvas -->
+	<nav class="navbar bg-body-tertiary fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"> 
+				<img src="./photos/logo.png" alt="logo" width="90" height="72" class="d-inline-block align-text-center">
+				<span class="ms-2">The Noble Kitchen</span>
+			</a>	
+			<div>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">ΚΡΑΤΗΣΗ</button>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header justify-content-end">
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="nav-item">
+						<ul class="navbar-nav d-flex flex-column align-items-center flex-grow-1 pe-3">
+							<li><a class="nav-link active" aria-current="page" href="#">ΑΡΧΙΚΗ</a></li>
+							<li><a class="nav-link" href="menu.html">ΜΕΝΟΥ</a></li>
+							<li><a class="nav-link" href="menu.html#wines">WINE LIST</a></li>
+							<li><a class="nav-link" href="#">THE NOBLE KITCHEN</a></li>
+							<li><a class="nav-link" href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+						</ul>
+					</div>
+					<div class="d-flex justify-content-center">
+						<div class="list-group list-group-horizontal">
+							<a href="#" class="list-group-item list-group-item-action"><img src="./photos/facebook.png";></a>
+							<a href="#" class="list-group-item list-group-item-action"><img src="./photos/insta.png";></a>
+							<a href="#" class="list-group-item list-group-item-action"><img src="./photos/trip.png";></a>
+						</div>
+					</div>
+					<div class="d-flex flex-row mb-2 justify-content-baseline align-content-baseline">
+						<div class="p-2"><img src="./photos/address.png" class="img" alt="location"></div>
+						<div class="p-2"><a>Αλκμάνος 2, 115 28<br>Κολωνάκι, Αθήνα</a></div>
+					</div>
+					<div class="d-flex flex-row mb-2 justify-content-baseline align-content-baseline">
+						<div class="p-2"><img src="./photos/phone.png" class="img" alt="phone"></div>
+						<div class="p-2"><a>Τηλ: +30261005647</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar-Offcanvas -->
+
+	<div class="container-fluid">
+
+		<!-- Navigation Menu -->
+		<div class="row">
+			<div class="col-sm-2" id="left">	
+				<img src="./photos/logo.png" class="img-thumbnail align-content-center" alt="logo">
+				<div class="nav-item">
+					<ul class="nav flex-column align-content-center">
+						<li><a class="nav-link active" aria-current="page" href="#">ΑΡΧΙΚΗ</a></li>
+						<li><a class="nav-link" href="menu.html">ΜΕΝΟΥ</a></li>
+						<li><a class="nav-link" href="menu.html#wines">WINE LIST</a></li>
+						<li><a class="nav-link" href="#">THE NOBLE KITCHEN</a></li>
+						<li><a class="nav-link" href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+					</ul>
+				</div>
+				<div class="d-flex justify-content-center align-items-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">ΚΡΑΤΗΣΗ</button></div>
+				<div class="d-flex justify-content-center">
+					<div class="list-group list-group-horizontal">
+						<a href="#" class="list-group-item list-group-item-action"><img src="./photos/facebook.png";></a>
+						<a href="#" class="list-group-item list-group-item-action"><img src="./photos/insta.png";></a>
+						<a href="#" class="list-group-item list-group-item-action"><img src="./photos/trip.png";></a>
+					</div>
+				</div>
+				<div class="d-flex flex-row mb-2 justify-content-baseline align-content-baseline">
+					<div class="p-2"><img src="./photos/address.png" class="img" alt="location"></div>
+					<div class="p-2"><a>Αλκμάνος 2, 115 28<br>Κολωνάκι, Αθήνα</a></div>
+				</div>
+				<div class="d-flex flex-row mb-2 justify-content-baseline align-content-baseline">
+					<div class="p-2"><img src="./photos/phone.png" class="img" alt="phone"></div>
+					<div class="p-2"><a>Τηλ: +30261005647</a></div>
+				</div>														
+			</div>
+		<!-- Navigation Menu -->
+
+			<div class="col-md-10">
+                <nav>
+                    <h4>Καλωσορίσατε στο Noble Kitchen</h4>
+                    <div class="welcoming">
+                        <span>Γεια σου, User!</span><br>
+                        <a href="main.html">Αποσύνδεση</a>
+                    </div>
+                </nav>
+				<div class="d-flex flex-column">					
+					<img src="./photos/slide.jpg" class="img-thumbnail" alt="restaurant-picture" id="menu_picture">		
+					<div class="trip-advisor">
+						<img src="./photos/tripadv.png" style="z-index: 0;">
+					</div>
+
+					<!-- Scroll Button -->
+					<div class="one withsmallpadding ppb_text" style="padding: 30px 0 30px 0;">						
+						<div id="scroll" class="scroll"><a href="#beef" id="home-link" onclick="scrollSlowly(event)" class="scroll-link"><img style="width:40px; height: 189px;" class="alignnone size-full wp-image-5742" src="./photos/scroll.png" alt=""></a></div>						
+					</div>
+					<!-- Scroll Button -->
+
+					<!-- Adding space between the pages -->
+					<div class="one withsmallpadding ppb_text" style="padding: 30px 0 30px 0;"></div>
+					<!-- Adding space between the pages -->
+
+					<div class="one withsmallpadding ppb_text"  style="text-align: center; padding-top: 0 !important; padding-bottom: 0 !important; padding: 50px 0 50px 0;">			
+						<div style="margin: auto; width: 100%;">
+							<h1 style="font-size: 45px; text-transform: uppercase; letter-spacing: -1px; font-weight: 500; line-height: 45px; color: #000;">The Noble Kitchen</h1>					
+							<p><span class="ppb_title_first">taste the experience</span></p>									
+						</div>					
+					</div>
+					<div class="d-flex flex-column" id="meats" style="margin: auto; width: 100%;">		
+						<div class="photo-list-container" style="position: relative; display: inline-block;">
+							<img src="./photos/apolausi.jpg" style="width:80%; position:relative;"alt="">
+							<ul class="steaks_list" >
+								<li><h2 id="beef" class="ppb_title"><span class="ppb_title_first">Steaks</span>Natural Beef // Black Angus</h2></li>
+								<li>PICANHA</li>
+								<li>STRIPLOIN</li>
+								<li>PORTERHOUSE</li>
+								<li>PRIME RIB</li>
+								<li>TOMAHAWK</li>
+								<li>RIB-EYE</li>
+								<a class="mt-3 button pull-right" href="menu.html">ΜΕΝΟΥ</a></p>
+							</ul>					
+						</div>
+					</div>		
+				
+					<!-- An about script -->
+					<div class="one_half last parallax_scroll">
+						<h2 class="ppb_title"><span class="ppb_title_first">OurPlace</span>Ανακαινισμενο εστιατοριο</h2>
+						<div class="page_header_sep left"></div>
+						<p>Καλώς ήρθατε στο The Noble Kitchen, όπου προσφέρουμε μια αξέχαστη γευστική εμπειρία σε μια ζεστή και εκλεπτυσμένη ατμόσφαιρα. Το εστιατόριό μας έχει δεσμευτεί να χρησιμοποιεί μόνο τα πιο φρέσκα και ποιοτικά υλικά για να δημιουργεί νόστιμα, εμπνευσμένα πιάτα που γιορτάζουν τις γεύσεις και τις παραδόσεις της σύγχρονης κουζίνας.
+							Το μενού μας περιλαμβάνει μια σειρά από προσεκτικά σχεδιασμένα πιάτα, από μικρά πιάτα και ορεκτικά μέχρι χορταστικά κυρίως πιάτα και παρακμιακά επιδόρπια. Κάθε πιάτο προετοιμάζεται με δεξιοτεχνία από τους ταλαντούχους σεφ μας, οι οποίοι προσφέρουν χρόνια εμπειρίας και πάθος για το φαγητό σε κάθε πιάτο.			
+							Στο The Noble Kitchen, πιστεύουμε ότι το καλό φαγητό πρέπει να απολαμβάνεται με καλή παρέα, γι' αυτό και είμαστε υπερήφανοι για τη ζεστή και φιλόξενη ατμόσφαιρά μας. Είτε γιορτάζετε μια ειδική περίσταση με φίλους και οικογένεια είτε απλά αναζητάτε ένα αξέχαστο γεύμα, σας προσκαλούμε να έρθετε μαζί μας για μια βραδιά με νόστιμο φαγητό, εξαιρετική εξυπηρέτηση και αξέχαστες αναμνήσεις.						
+							Σας ευχαριστούμε που επιλέξατε το The Noble Kitchen - ανυπομονούμε να σας εξυπηρετήσουμε.<br>
+						<a class="mt-3 button pull-right" href="">Περισσοτερα</a></p>
+						</div>	
+					</div>		
+					<!-- An about script -->
+
+					<!-- Standing-outs -->
+					<div class="one withsmallpadding ppb_text" style="text-align: center; padding-top: 0 !important; padding-bottom: 0 !important; padding: 50px 0 50px 0;">			
+						<div style="margin: auto; width: 100%;">
+							<h1 style="font-size: 45px; text-transform: uppercase; letter-spacing: -1px; font-weight: 500; line-height: 45px; color: #000;">SELECTION</h1>					
+							<p><span class="ppb_title_first">Stand-outs</span></p>									
+						</div>					
+					</div>
+					<div class="plate-list">
+							<div class="plate-item">
+								<img src="./photos/beer-chicken-400x400.jpg">
+								<p>Beer Chicken</p>
+							</div>
+							<div class="plate-item">
+								<img src="./photos/burger-400x400.jpg">
+								<p>Burger</p>
+							</div>
+							<div class="plate-item">
+								<img src="./photos/kotsi-400x400.jpg">
+								<p>Κότσι</p>
+							</div>
+							<div class="plate-item">
+								<img src="./photos/mosxaraki.jpg">
+								<p>Μοσχάρι</p>
+							</div>
+							<div class="plate-item">
+								<img src="./photos/solwmakijpg.jpg">
+								<p>Σολωμός</p>
+							</div>
+					</div>
+					<div class="one withsmallpadding ppb_text" style="text-align: center; padding-top: 0 !important; padding-bottom: 0 !important; padding: 50px 0 50px 0;">			
+						<div style="margin: auto; width: 100%;">
+							<h1 style="font-size: 45px; text-transform: uppercase; letter-spacing: -1px; font-weight: 500; line-height: 45px; color: #000;">Fine Dining</h1>					
+							<p><span class="ppb_title_first">Experience</span></p>									
+						</div>					
+					</div>
+					<!-- Standing-outs -->
+
+					<img src="./photos/fine-dining.jpg" style="max-width:100%; height: auto !important; position:relative; bottom:10px">
+
+					<!-- Fine Dining -->
+					<div class="second_half last parallax_scroll">
+						<h2 class="ppb_title"><span class="ppb_title_first">Featured</span> Dishes</h2>
+						<div id="menu_4415" class="menu_content_classic">
+							<h5 class="menu_post"><span class="menu_title" style="background: #ffffff;">Veal carpaccio</span></h5>
+							<p>&nbsp;</p>
+							<div class="post_detail menu_excerpt">Bοδινό φιλέτο, τσιμιτσούρι, ρόκα, παρμεζάνα, αυγο βραστο</div>
+						</div>				
+						<div id="menu_4414" class="menu_content_classic">
+							<h5 class="menu_post"><span class="menu_title" style="background: #ffffff;">ORAKING Salmon Τartar</span></h5>
+							<p><span class="menu_price" style="background: #ffffff;">14,90€</span></p>
+							<div class="post_detail menu_excerpt">Σολωμός ORAKING, πιπεριά καυτερή, σουσάμι, κρεμμύδι, αγγούρι, nachos, κόλιανδρο, μαγιονέζα</div>
+						</div>				
+						<div id="menu_4369" class="menu_content_classic">
+							<h5 class="menu_post"><span class="menu_title" style="background: #ffffff;">Ριζοτο γαριδα</span></h5>
+							<p><span class="menu_price" style="background: #ffffff;">13,90€</span></p>
+							<div class="post_detail menu_excerpt">Ρύζι αρμπόριο, γαρίδα, μπισκ γαρίδας, σαφράν, παρμεζάνα, βασιλικό, τοματινια κονφι</div>
+						</div>
+						<div id="menu_4357" class="menu_content_classic">
+							<h5 class="menu_post"><span class="menu_title" style="background: #ffffff;">Roast Brie</span></h5>
+							<p><span class="menu_price" style="background: #ffffff;">8,70€</span></p>
+							<div class="post_detail menu_excerpt">Γαλλικό τυρί μπρί ψημένο στο φούρνο και σερβιρισμένο με μαρμελάδα βατόμουρο</div>
+							<div class="menu_highlight"></div>
+						</div>
+					</div>
+					<!-- Fine Dining -->
+			
+					<!-- Creating Footer -->
+					<footer>
+						<div class="footer-row text-center">
+							<div class="logo">
+								<img src="./photos/logo.png" alt="the noble kitchen logo" width="200">
+							</div>
+							<div class="tagline">
+								<h5>A RESTAURANT IN LOVE WITH MEAT. INDULGE IN THE NOBILITY OF TASTE</h5>
+							</div>
+							<div class="address">
+								<p>Αλκμάνος 2, 115 28 Κολωνάκι<br> Αθήνα<br>
+								<a href="tel:+302610346452">2610 346 452</a></p>
+								<a href="https://www.google.com/maps/place/Alkmanos+2,+Athina+115+28/data=!4m2!3m1!1s0x14a1bd5a9f3a8669:0x4b5b38bfb64545f3?sa=X&ved=2ahUKEwiB2cft3Yb-AhVILewKHW5MAd4Q8gF6BAgSEAI" target="_blank">ΒΡΕΙΤΕ ΜΑΣ ΣΤΟ ΧΑΡΤΗ</a>
+							</div>
+						
+						</div>
+						<div class="footer-row">
+							<div class="credits">
+								<p>The Noble Kitchen © 2023</p>		
+								<a href="https://github.com/GigaTasoulis/Web_Progamming">Site created by G/K</a>
+							</div>
+						</div>
+					</footer>
+					<!-- Created Footer -->
+				</div>
+			</div>		
+		</div>
+<!-- Login Modal -->
+<div class="modal fade" id="formModal" aria-hidden="true" aria-labelledby="formModal" tabindex="-1">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="staticBackdropLabel">Στοιχεία Κράτησης</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group d-flex">						
+					<form id="tg_reservation_form" method="post">
+                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                            <div class="col-md-3">
+                                <label for="your_name">Όνομα:</label>
+                                <input id="your_name" name="your_name" type="text" class="required_field">
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <label for="email">Email:</label>
+                                <input id="email" name="email" type="email" class="required_field" required>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <label for="phone">Τηλέφωνο:</label>
+                                <input id="phone" name="phone" type="text" class="required_field">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 d-flex justify-content-between align-items-center"> 
+                            <div class="col-md-3">
+                                <label for="date" class="hidden">Ημ/νία:</label>
+                                <input type="date" class="datepicker" id="date" name="date" style="width:190px">
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <label for="time">Ώρα:</label>
+                                <select id="time" name="time" class="required_field" style="width:190px">
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="16:30">16:30</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:00+" disabled="">Μετά τις 21:00 μόνο τηλεφωνικά</option>
+        
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="seats">Ατομα:</label>
+                                <select id="seats" name="seats" class="required_field" style="width:99%">
+                                                                    <option value="1">1 άτομο</option>
+                                                                    <option value="2">2 άτομα</option>
+                                                                    <option value="3">3 άτομα</option>
+                                                                    <option value="4">4 άτομα</option>
+                                                                    <option value="5">5 άτομα</option>
+                                                                    <option value="6">6 άτομα</option>
+                                                                <option value="6+" disabled="">Για πάνω από 6 άτομα μόνο τηλεφωνικά</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="message">Ειδικά αιτήματα ή αλλεργίες</label>
+                            <div class="col-md-12">
+                                <textarea id="message" name="message"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="check" style="display: inline-flex;">
+                            <input type="checkbox" class="required_field gdpr" value="" style="margin-right: 10px;">
+                            <label for="gdpr" class="gdpr_label">Δίνω τη συγκατάθεσή μου στο Kouzeineri Steak House Restaurant Heraklion Crete να συλλέξει τα στοιχεία μου μέσω αυτής της φόρμας.</label>
+                        </div>    
+
+                    </form>						
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btnModal" data-bs-target="#registerModal" data-bs-toggle="modal">ΚΡΑΤΗΣΗ</button>
+			</div>
+		</div>				
+	</div>
+</div>	
+
+<!--Created Login Modal -->
+	
+</body>
+
+<!-- Javascript import -->
+<script src="main.js" async></script>
+<script src="node.js" async></script>
+
+</html>
