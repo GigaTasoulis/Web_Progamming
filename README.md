@@ -1,57 +1,67 @@
-# Restaurant App
-This is website designed to support restaurant management, including features such as reservations, and menu management. The app is built using Javascript,HTML,Bootstrap,Node,Express.
+# Εφαρμογή Εστιατορίου
+Πρόκειται για ιστότοπο που έχει σχεδιαστεί για την υποστήριξη της διαχείρισης εστιατορίων, συμπεριλαμβανομένων λειτουργιών όπως οι κρατήσεις και η διαχείριση μενού. Η εφαρμογή έχει κατασκευαστεί χρησιμοποιώντας Javascript,HTML,Bootstrap,Node,Express.
 
-## Features
-The app currently supports the following features:
+## Χαρακτηριστικά
+Η εφαρμογή υποστηρίζει επί του παρόντος τα ακόλουθα χαρακτηριστικά:
 
 ``` 
 
-- Menu: Customers can see the available menu,dishes etc.
-- Wine List: Available wines
-- Reservations: Customers can reserve tables and receive confirmation through the app.
-- Menu Management: Administrators can update the menu and pricing through the app.
-- Reservation Management: Administrators are able to process the reservations
-- Supports Job Application
+- Μενού: Οι πελάτες μπορούν να δουν το διαθέσιμο μενού, τα πιάτα κ.λπ.
+- Λίστα κρασιών: Διαθέσιμα κρασιά.
+- Κρατήσεις: Οι πελάτες μπορούν να κάνουν κράτηση τραπεζιών και να λαμβάνουν επιβεβαίωση μέσω της εφαρμογής.
+- Διαχείριση μενού: Οι διαχειριστές μπορούν να ενημερώνουν το μενού και τις τιμές μέσω της εφαρμογής.
+- Διαχείριση κρατήσεων: Οι διαχειριστές είναι σε θέση να επεξεργάζονται τις κρατήσεις
+- Υποστηρίζει αίτηση εργασίας
 
 ```
 
 
 
-## Installation
-To install the app, follow these steps:
+## Εγκατάσταση εφαρμογής
+Για την εγκατάσταση της εφαρμογής ακολουθήστε τα βήματα παρακάτω:
 
-Clone this repository to your local machine and
-install the libraries: 
-``` -
--
--
--
--
--
-```
+### Προαπαιτούμενα:
 
-## Usage
-To use the app, follow these steps:
+```Βεβαιωθείτε ότι έχετε εγκαταστήσει το Node.js και το npm (Node Package Manager) στο μηχάνημά σας. Μπορείτε να τα κατεβάσετε από την επίσημη ιστοσελίδα του Node.js: https://nodejs.org```
 
--
--
--
--
--
--
+### Βήματα εγκατάστασης:
 
-## Contributing
-We welcome contributions to this project! If you would like to contribute, please follow these steps:
+Κατεβάστε τον πηγαίο κώδικα της εφαρμογής και αποσυμπιέστε τον σε έναν κατάλογο της επιλογής σας.
+Ανοίξτε ένα τερματικό ή μια γραμμή εντολών και πλοηγηθείτε στον κατάλογο από όπου εξαγάγατε τον πηγαίο κώδικα της εφαρμογής.
 
-Fork this repository.
-Create a new branch for your changes.
-Make your changes and commit them to your branch.
-Submit a pull request to this repository with a description of your changes.
-Credits
-This app was created by Giannakakis Anastasios and Katis Ioannis.
+### Εγκαταστήστε τα απαιτούμενα modules εκτελώντας την ακόλουθη εντολή:
+```npm install```
+
+### Ρυθμίστε τη βάση δεδομένων:
+
+Βεβαιωθείτε ότι έχετε εγκαταστήσει το SQLite στο σύστημά σας . Αν όχι, μπορείτε να το κατεβάσετε από την ιστοσελίδα της SQLite: https://www.sqlite.org/download.html
+.Σιγουρευτείτε ότι υπάρχει ή δημιουργήστε ένα νέο αρχείο βάσης δεδομένων SQLite (π.χ., restaurant_database.db) στο ριζικό κατάλογο της εφαρμογής.
 
 
-That's a basic README.md file for a restaurant app. Of course, you can customize it to fit your needs and add more information as necessary.
+### Εκτελέστε την ακόλουθη εντολή για να εκκινήσετε την εφαρμογή:
+```npx nodemon main.js```
+
+Η εφαρμογή θα πρέπει τώρα να εκτελείται και θα πρέπει να δείτε έξοδο στο τερματικό που δείχνει ότι ο διακομιστής έχει ξεκινήσει.
+Από προεπιλογή, η εφαρμογή θα ακούει στη θύρα 3000. Αν θέλετε να χρησιμοποιήσετε μια διαφορετική θύρα, μπορείτε να τροποποιήσετε τον αριθμό της θύρας στο αρχείο app.js.
+Πρόσβαση στην εφαρμογή:
+
+Ανοίξτε ένα πρόγραμμα περιήγησης ιστού και επισκεφθείτε το http://localhost:3000 (ή την καθορισμένη θύρα) για να αποκτήσετε πρόσβαση στην εφαρμογή.
+Θα πρέπει να μπορείτε να πλοηγηθείτε στις διάφορες διαδρομές και να αλληλεπιδράσετε με τον ιστότοπο του εστιατορίου.
+Αυτό είναι όλο! Έχετε εγκαταστήσει και εκκινήσει με επιτυχία την εφαρμογή. Μπορείτε τώρα να εξερευνήσετε τη λειτουργικότητά της και να δοκιμάσετε τις λειτουργίες ελέγχου ταυτότητας και συνεδρίας.
+
+## Συνεισφορά
+Καλωσορίζουμε συνεισφορές σε αυτό το έργο! Αν θέλετε να συνεισφέρετε, ακολουθήστε τα παρακάτω βήματα:
+
+Μεταφέρεται αυτό το repository.
+Δημιουργήστε έναν νέο κλάδο για τις αλλαγές σας.
+Πραγματοποιήστε τις αλλαγές σας και μεταφέρετέ τες στον κλάδο σας.
+Υποβάλετε ένα pull request σε αυτό το αποθετήριο με μια περιγραφή των αλλαγών σας.
+
+Συντελεστές:
+Αυτή η εφαρμογή δημιουργήθηκε από τον Γιαννακάκη Αναστάσιο και τον Κατή Ιωάννη.
+
+
+Αυτό είναι ένα βασικό αρχείο README.md για μια εφαρμογή εστιατορίου. Φυσικά, μπορείτε να το προσαρμόσετε ώστε να ταιριάζει στις ανάγκες σας και να προσθέσετε περισσότερες πληροφορίες ανάλογα με τις ανάγκες σας.
 
 ## Here is a preview of our ERD:
 
