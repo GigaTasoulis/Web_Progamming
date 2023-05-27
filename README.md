@@ -56,6 +56,6 @@
 
 ## Here is a preview of our ERD:
 
-![image](https://user-images.githubusercontent.com/119429929/229145826-2e397f3c-2b12-40e5-b1f7-a054901c9d04.png)
+![image](https://github.com/GigaTasoulis/Web_Progamming/assets/119429929/77a19531-ff7c-46b0-b28b-cd76919dca8e)
 
 
